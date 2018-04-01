@@ -102,26 +102,13 @@
             'ab-title-split-testing',
             'lh_viewed_widget-css',
         ].forEach(function(cssId) {
-            document.getElementById(cssId).disabled = false;
+            var el = document.getElementById(cssId);
+            if (el)
+                el.disabled = false;
         });
     }
 
     document.addEventListener('DOMContentLoaded', loadCssAfterDomLoaded);
-
-[
-    'lh-deal-outer-css',
-    'projects-sidebar-fix-css',
-    'lh_post_source-css',
-    'lh-slider-styles-css',
-    'lh_slides__style-css',
-    'responsive-lightbox-nivo-css',
-    'responsive-lightbox-nivo-default',
-    'fonts-css',
-    'vendors-css',
-    'all-css',
-    'ab-title-split-testing',
-    'lh_viewed_widget-css',
-]
 
 </script>
         <script type="text/javascript">
